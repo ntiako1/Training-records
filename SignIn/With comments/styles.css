@@ -1,0 +1,115 @@
+/*                                           */
+/* A creation by N💖TIAKO                   */
+/* Codepen link: https://codepen.io/NTIAKO  */
+/* GitHub link: https://github.com/ntiako1 */
+/*                                        */
+
+
+/* Importing Roboto Slab font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+/* Global reset and basic styling */
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    list-style-type: none; /* Remove default list styling */
+    text-decoration: none; /* Remove default text decoration */
+    font-family: 'Roboto Slab', sans-serif; /* Use Roboto Slab font as default */
+    scroll-behavior: smooth; /* Smooth scrolling behavior */
+    font-size: 1em; /* Default font size */
+}
+
+/* Define custom CSS variables */
+:root {
+    --t: #fff; /* White color */
+    --t2: #1F2A3D; /* Dark blue color */
+    --bg: #333; /* Dark background color */
+    --bg2: #A29655; /* Brownish background color */
+}
+
+/* Body styling */
+body {
+    position: fixed; /* Fix the body's position */
+    top: 50%; /* Position at the vertical center */
+    left: 50%; /* Position at the horizontal center */
+    transform: translateX(-50%) translateY(-50%); /* Center the body */
+    background-color: var(--bg); /* Use custom background color */
+}
+
+/* Styling for the card container */
+.card {
+    color: var(--t); /* White text color */
+    background: url(Images/doodad.png); /* Background image */
+    width: 300px; /* Width of the card */
+    height: 400px; /* Height of the card */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange children in a column */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    border-radius: 5%; /* Rounded corners */
+}
+
+/* Header styling */
+h2 {
+    font-size: 2em; /* Larger font size */
+    margin: 5%; /* Add margin around the header */
+    width: max-content; /* Set width to fit content */
+}
+
+/* Content area styling */
+.content-card {
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange children in a column */
+    padding: 10%; /* Add padding */
+    padding-bottom: 0; /* Remove bottom padding */
+}
+
+/* Label styling */
+label {
+    font-size: 1.2em; /* Larger font size */
+}
+
+/* Input field styling */
+input {
+    margin-bottom: 5%; /* Add bottom margin */
+    padding: 5%; /* Add padding */
+    background-color: var(--bg2); /* Use custom background color */
+    border: 1px solid black; /* Add border */
+    border-radius: 10px; /* Rounded corners */
+    width: 100%; /* Full width */
+    padding: 3%; /* Adjust padding */
+}
+
+/* Placeholder text styling */
+input::placeholder {
+    color: var(--t); /* Use custom text color */
+    font-size: 0.8em; /* Smaller font size */
+}
+
+/* Focus styling for input fields */
+input:focus {
+    color: var(--t); /* Use custom text color */
+    outline: none; /* Remove outline */
+}
+
+/* Styling specific to password input fields */
+input[type=password] {
+    margin-bottom: 30%; /* Add larger bottom margin */
+}
+
+/* Styling for submit button */
+input[type=submit] {
+    background-color: var(--t2); /* Use custom background color */
+    border: 1px solid black; /* Add border */
+    border-radius: 50px; /* Rounded corners */
+    padding: 10px; /* Add padding */
+    color: var(--t); /* Use custom text color */
+    margin-bottom: 10%; /* Add bottom margin */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Styling for anchor (link) elements */
+a {
+    color: var(--t); /* Use custom text color */
+}
